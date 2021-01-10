@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "ccf10b28-4de7-45ab-84c7-2f3bf856f21a",
+		"name": "crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"新人2\",\n    \"age\": 21,\n    \"city\": \"江苏\",\n    \"job\": \"事业单位\",\n    \"salary\": 8000,\n    \"birth_day\": 592471000000\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:7001/api/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "127.0.0.1:7001/api/delete/13",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"delete",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 16,\n    \"name\": \"新人3\",\n    \"age\": 21,\n    \"city\": \"江苏\",\n    \"job\": \"事业单位\",\n    \"salary\": 8000,\n    \"birth_day\": 592471000000\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:7001/api/put/16",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"put",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
